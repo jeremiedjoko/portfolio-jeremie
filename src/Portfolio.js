@@ -99,7 +99,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="hidden md:flex items-center gap-6">
+            <div className="flex items-center gap-6">
               <a href="#about" className="hover:text-white/90">
                 À propos
               </a>
@@ -115,12 +115,6 @@ export default function Portfolio() {
               <a href="#contact" className="hover:text-white/90">
                 Contact
               </a>
-            </div>
-
-            <div className="md:hidden">
-              <button className="px-3 py-2 ring-1 ring-white/10 rounded-md">
-                Menu
-              </button>
             </div>
           </nav>
         </header>
