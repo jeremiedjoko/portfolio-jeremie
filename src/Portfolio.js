@@ -126,9 +126,8 @@ export default function Portfolio() {
         </header>
 
         {/* Main Content */}
-
 <PortfolioScene />
-
+<div className="relative z-10 p-4">
         <main className="max-w-6xl mx-auto px-6 pb-24">
 
           {/* Hero Section */}
@@ -258,7 +257,7 @@ export default function Portfolio() {
                 <h4 className="font-semibold">Outils & OS</h4>
                 <p className="text-sm text-white/60 mt-2">
                   Wireshark, Metasploit, Suricata, BurpSuite, Nmap, Snort,
-                  FortiGate, React Js, Python / Flask, MySQL, Bootstrap, Git /
+                  FortiGate, React Js, Flask, MySQL, Bootstrap, Git /
                   GitHub Linux, Windows
                 </p>
               </div>
@@ -462,12 +461,13 @@ export default function Portfolio() {
             </form>
           </section>
 
+
           {/* Footer */}
           <footer className="mt-16 text-center text-sm text-white/50 pb-12">
             © {new Date().getFullYear()} Jérémie Landry Djoko — Diplômé en Licence de Sécurité Informatique
           </footer>
         </main>
-
+</div>
         {/* Background grid neon effect */}
         <div aria-hidden className="fixed inset-0 pointer-events-none -z-10">
           <svg className="w-full h-full opacity-5" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
