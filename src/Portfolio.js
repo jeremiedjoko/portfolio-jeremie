@@ -99,29 +99,23 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="flex items-center gap-6">
-              <a href="#about" className="hover:text-white/90">
-                À propos
-              </a>
-              <a href="#projects" className="hover:text-white/90">
-                Projets
-              </a>
-              <a href="#skills" className="hover:text-white/90">
-                Compétences
-              </a>
-              <a href="#experience" className="hover:text-white/90">
-                Expériences
-              </a>
-              <a href="#contact" className="hover:text-white/90">
-                Contact
-              </a>
-            </div>
+
+
+<div className="flex flex-row items-center gap-2 text-sm sm:text-base px-2">
+  <a href="#about" className="text-white hover:text-white/90 whitespace-nowrap">À propos</a>
+  <a href="#projects" className="text-white hover:text-white/90 whitespace-nowrap">Projets</a>
+  <a href="#skills" className="text-white hover:text-white/90 whitespace-nowrap">Compétences</a>
+  <a href="#experience" className="text-white hover:text-white/90 whitespace-nowrap">Expériences</a>
+  <a href="#contact" className="text-white hover:text-white/90 whitespace-nowrap">Contact</a>
+</div>
           </nav>
         </header>
 
         {/* Main Content */}
 <PortfolioScene />
 <div className="relative z-10 p-4">
+<div className="flex flex-wrap items-center gap-4">
+
         <main className="max-w-6xl mx-auto px-6 pb-24">
 
           {/* Hero Section */}
@@ -234,7 +228,7 @@ export default function Portfolio() {
               pour protéger les infrastructures critiques.
             </p>
 
-            <div className="mt-6 grid md:grid-cols-3 gap-4">
+            <div className="mt-6 grid md:grid-cols-3 flex flex-wra gap-4">
               <div className="p-4 rounded-lg bg-[#071025]/60 ring-1 ring-white/4">
                 <h4 className="font-semibold">Formation</h4>
                 <p className="text-sm text-white/60 mt-2">
@@ -266,10 +260,11 @@ export default function Portfolio() {
               <p className="text-sm text-white/60"> Orientés CyberSécurité & Dev</p>
             </div>
 
-            <div className="mt-6 grid md:grid-cols-2 gap-6">
+            <div className="mt-6 grid md:grid-cols-2 gap-4">
               {/* Card 1 */}
-              <article className="p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
-                <h4 className="font-semibold text-lg">
+             
+  <article className="w-full p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition"> 
+               <h4 className="font-semibold text-lg">
                   Système de détection & prévention d'exfiltration
                 </h4>
                 <p className="text-sm text-white/70 mt-2">
@@ -289,7 +284,8 @@ export default function Portfolio() {
               </article>
 
               {/* Card 2 */}
-              <article className="p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
+              
+  <article className="w-full p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
                 <h4 className="font-semibold text-lg">
                   Application mobile - Dashboard & Notifications
                 </h4>
@@ -309,7 +305,8 @@ export default function Portfolio() {
               </article>
 
               {/* Card 3 */}
-              <article className="p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
+  <article className="w-full p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">              
+
                 <h4 className="font-semibold text-lg">Scripts d'exfiltration (analyse pédagogique)</h4>
                 <p className="text-sm text-white/70 mt-2">
                   Analyse et détection de scripts d'exfiltration sur DNS/HTTP.
@@ -326,7 +323,7 @@ export default function Portfolio() {
               </article>
 
               {/* Card 4 */}
-              <article className="p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
+                <article className="w-full p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
                 <h4 className="font-semibold text-lg">FortiGate - Filtrage logique</h4>
                 <p className="text-sm text-white/70 mt-2">
                   Mise en place d'un FortiGate (logique) pour filtrer l'accès aux sites
@@ -339,7 +336,7 @@ export default function Portfolio() {
               </article>
 
               {/* Card 5 */}
-              <article className="p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
+                <article className="w-full p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
                 <h4 className="font-semibold text-lg">Projet académique - Comotorage (Flask)</h4>
                 <p className="text-sm text-white/70 mt-2">
                   Application web de covoiturage développée avec Flask.
@@ -359,7 +356,7 @@ export default function Portfolio() {
               </article>
 
               {/* Card 6 */}
-              <article className="p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
+               <article className="w-full p-5 rounded-xl bg-[#061328]/60 ring-1 ring-white/6 backdrop-blur-md transform hover:scale-[1.01] transition">
                 <h4 className="font-semibold text-lg">Projet IA - Détection d'exfiltration de données</h4>
                 <p className="text-sm text-white/70 mt-2">
                   Développement et entraînement d’un modèle d’intelligence artificielle
@@ -403,11 +400,19 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
-              {["Suricata","Wireshark","Nmap","Metasploit","BurpSuite","Linux","Python","Bash"].map((tag) => (
-                <span key={tag} className="inline-block py-1 px-3 rounded-full bg-white/5 text-xs">{tag}</span>
-              ))}
-            </div>
+
+
+
+<div className="mt-6 grid grid-cols-4 gap-3">
+  {["Suricata", "Wireshark", "Nmap", "Metasploit", "BurpSuite", "Linux", "Python", "Bash"].map((tag) => (
+    <span
+      key={tag}
+      className="inline-block py-1 px-3 rounded-full bg-white/5 text-xs text-center"
+    >
+      {tag}
+    </span>
+  ))}
+</div>
           </section>
 
           {/* Experience Section */}
@@ -417,6 +422,7 @@ export default function Portfolio() {
               <div className="p-4 rounded-lg bg-[#071025]/60 ring-1 ring-white/6">
                 <h4 className="font-semibold">Port Autonome de Cotonou — Stage (3 mois)</h4>
                 <p className="text-sm text-white/70 mt-2">Conception d'une solution de prévention et détection des exfiltrations via canaux cachés. Rédaction du playbook opérationnel, règles Suricata et tests de détection, Mise en place de la Stack ELK  pour la corrélation. </p>
+
               </div>
               <div className="p-4 rounded-lg bg-[#071025]/60 ring-1 ring-white/6">
                 <h4 className="font-semibold">Ministère de l'Agriculture — Stage (1 mois)</h4>
@@ -461,6 +467,7 @@ export default function Portfolio() {
             © {new Date().getFullYear()} Jérémie Landry Djoko — Diplômé en Licence de Sécurité Informatique
           </footer>
         </main>
+</div>
 </div>
         {/* Background grid neon effect */}
         <div aria-hidden className="fixed inset-0 pointer-events-none -z-10">
