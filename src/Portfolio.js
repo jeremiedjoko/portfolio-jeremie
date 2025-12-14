@@ -244,15 +244,15 @@ export default function Portfolio() {
               <div className="p-4 rounded-lg bg-[#071025]/60 ring-1 ring-white/4">
                 <h4 className="font-semibold">Langages</h4>
                 <p className="text-sm text-white/60 mt-2">
-                  Python, Bash, C++, HTML, CSS, PHP, SQL
+                  Python, Bash, C++, HTML, CSS, PHP, SQL, MySQL
                 </p>
               </div>
               <div className="p-4 rounded-lg bg-[#071025]/60 ring-1 ring-white/4">
                 <h4 className="font-semibold">Outils & OS</h4>
                 <p className="text-sm text-white/60 mt-2">
                   Wireshark, Metasploit, Suricata, BurpSuite, Nmap, Snort,
-                  FortiGate, React Js, Flask, MySQL, Bootstrap, Git /
-                  GitHub Linux, Windows
+                  FortiGate, React Js, Flask , Bootstrap, Git /
+                  GitHub, Linux, Windows
                 </p>
               </div>
             </div>
