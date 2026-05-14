@@ -1,5 +1,5 @@
 // Portfolio.jsx
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars, Float } from "@react-three/drei";
 import emailjs from "emailjs-com";
@@ -7,49 +7,6 @@ import PortfolioScene from "./three/PortfolioScene";
 
 
 
-
-/* ===================== 3D BACKGROUND ===================== */
-function ThreeSceneWrapper() {
-  return (
-    <div className="fixed inset-0 -z-20">
-      <Canvas camera={{ position: [2.5, 2.5, 4], fov: 60 }}>
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[5, 5, 5]} intensity={1.3} />
-        <pointLight position={[-5, -5, -5]} intensity={0.6} />
-
-        <Stars
-          radius={120}
-          depth={60}
-          count={2500}
-          factor={4}
-          saturation={0}
-          fade
-          speed={1}
-        />
-
-        <Float speed={2} rotationIntensity={1.2} floatIntensity={1.5}>
-          <mesh rotation={[0.6, 0.7, 0.2]}>
-            <torusKnotGeometry args={[1, 0.25, 128, 32]} />
-            <meshStandardMaterial
-              color="#7C3AED"
-              metalness={0.75}
-              roughness={0.25}
-              emissive="#5B21B6"
-              emissiveIntensity={0.6}
-            />
-          </mesh>
-        </Float>
-
-        <OrbitControls
-          enableZoom={false}
-          enablePan={false}
-          autoRotate
-          autoRotateSpeed={1.2}
-        />
-      </Canvas>
-    </div>
-  );
-}
 
 export default function Portfolio() {
   const form = useRef();
@@ -298,8 +255,8 @@ export default function Portfolio() {
                   <li>Analyse de trafic et playbook d'incident</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</a>
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Documentation</a>
+                  <button className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</button>
+                  <button className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Documentation</button>
                 </div>
               </article>
 
@@ -319,8 +276,8 @@ export default function Portfolio() {
                   <li>Export PDF des incidents</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Prototype</a>
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Screenshots</a>
+                  <button className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Prototype</button>
+                  <button className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Screenshots</button>
                 </div>
               </article>
 
@@ -337,8 +294,8 @@ export default function Portfolio() {
                   <li>Règles Suricata et signatures personnalisées</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Rapport</a>
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Playbook</a>
+                  <button className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Rapport</button>
+                  <button className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Playbook</button>
                 </div>
               </article>
 
@@ -350,8 +307,8 @@ export default function Portfolio() {
                   sur le réseau du Ministère de l'Agriculture : journaux, règles et segmentation simple.
                 </p>
                 <div className="mt-4 flex gap-3">
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Configuration</a>
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Résultats</a>
+                  <button className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Configuration</button>
+                  <button className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Résultats</button>
                 </div>
               </article>
 
@@ -370,8 +327,8 @@ export default function Portfolio() {
                   <li>Notifications et suivi des trajets</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</a>
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Demo / Documentation</a>
+                  <button className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</button>
+                  <button className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Demo / Documentation</button>
                 </div>
               </article>
 
@@ -390,8 +347,8 @@ export default function Portfolio() {
                   <li>Intégration avec workflow de monitoring</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</a>
-                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Rapport / Résultats</a>
+                  <button className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</button>
+                  <button className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Rapport / Résultats</button>
                 </div>
               </article>
             </div>
