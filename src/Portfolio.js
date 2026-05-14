@@ -1,7 +1,7 @@
 // Portfolio.jsx
 import React, { useRef, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stars, Float } from "@react-three/drei";
+//import { Canvas } from "@react-three/fiber";
+//import { OrbitControls, Stars, Float } from "@react-three/drei";
 import emailjs from "emailjs-com";
 import PortfolioScene from "./three/PortfolioScene";
 
