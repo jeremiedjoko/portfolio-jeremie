@@ -298,8 +298,8 @@ export default function Portfolio() {
                   <li>Analyse de trafic et playbook d'incident</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</a>
-                  <a className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Documentation</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Documentation</a>
                 </div>
               </article>
 
@@ -319,8 +319,8 @@ export default function Portfolio() {
                   <li>Export PDF des incidents</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Prototype</a>
-                  <a className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Screenshots</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Prototype</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Screenshots</a>
                 </div>
               </article>
 
@@ -337,8 +337,8 @@ export default function Portfolio() {
                   <li>Règles Suricata et signatures personnalisées</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Rapport</a>
-                  <a className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Playbook</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Rapport</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Playbook</a>
                 </div>
               </article>
 
@@ -350,8 +350,8 @@ export default function Portfolio() {
                   sur le réseau du Ministère de l'Agriculture : journaux, règles et segmentation simple.
                 </p>
                 <div className="mt-4 flex gap-3">
-                  <a className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Configuration</a>
-                  <a className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Résultats</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Configuration</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Résultats</a>
                 </div>
               </article>
 
@@ -370,8 +370,8 @@ export default function Portfolio() {
                   <li>Notifications et suivi des trajets</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</a>
-                  <a className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Demo / Documentation</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Demo / Documentation</a>
                 </div>
               </article>
 
@@ -390,8 +390,8 @@ export default function Portfolio() {
                   <li>Intégration avec workflow de monitoring</li>
                 </ul>
                 <div className="mt-4 flex gap-3">
-                  <a className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</a>
-                  <a className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Rapport / Résultats</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#0f1724]/60 ring-1 ring-[#6EE7F7]/20">Code</a>
+                  <a href="#" className="px-3 py-2 rounded-md bg-[#7C3AED] text-black">Rapport / Résultats</a>
                 </div>
               </article>
             </div>
@@ -459,7 +459,7 @@ export default function Portfolio() {
               <li>📧 Email : <a href="mailto:jeremiedjoko@gmail.com" className="underline">jeremiedjoko@gmail.com</a></li>
               <li>📞 Téléphone : (+229) 46 94 16 09</li>
               <li>📍 Abomey-Calavi, Bénin</li>
-              <li>💼 LinkedIn : <a href="https://www.linkedin.com/in/jeremiedjoko/" className="underline" target="_blank">linkedin.com/in/jeremiedjoko</a></li>
+              <li>💼 LinkedIn : <a href="https://www.linkedin.com/in/jeremiedjoko/" className="underline" target="_blank" rel="noreferrer">linkedin.com/in/jeremiedjoko</a></li>
             </ul>
 
             {/* Formulaire EmailJS */}
@@ -484,7 +484,7 @@ export default function Portfolio() {
 
           {/* Footer */}
           <footer className="mt-16 text-center text-sm text-white/50 pb-12">
-            © {new Date().getFullYear()} Jérémie Landry Djoko — Licence en Sécurité Informatique
+            © {new Date().getFullYear()} Jérémie Landry Djoko — Analyste Cyber-sécurité
           </footer>
         </main>
 </div>
