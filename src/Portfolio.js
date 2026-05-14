@@ -1,5 +1,5 @@
 // Portfolio.jsx
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars, Float } from "@react-three/drei";
 import emailjs from "emailjs-com";
@@ -54,6 +54,7 @@ function ThreeSceneWrapper() {
 export default function Portfolio() {
   const form = useRef();
   const [status, setStatus] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   /* ===================== EMAIL ===================== */
   const sendEmail = (e) => {
@@ -101,14 +102,33 @@ export default function Portfolio() {
 
 
 
-<div className="flex flex-row items-center gap-2 text-sm sm:text-base px-2">
-  <a href="#about" className="text-white hover:text-white/90 whitespace-nowrap">À propos</a>
-  <a href="#projects" className="text-white hover:text-white/90 whitespace-nowrap">Projets</a>
-  <a href="#skills" className="text-white hover:text-white/90 whitespace-nowrap">Compétences</a>
-  <a href="#experience" className="text-white hover:text-white/90 whitespace-nowrap">Expériences</a>
-  <a href="#contact" className="text-white hover:text-white/90 whitespace-nowrap">Contact</a>
-</div>
+          {/* Desktop nav */}
+          <div className="hidden md:flex flex-row items-center gap-4 text-sm">
+            <a href="#about" className="text-white hover:text-white/90">À propos</a>
+            <a href="#projects" className="text-white hover:text-white/90">Projets</a>
+            <a href="#skills" className="text-white hover:text-white/90">Compétences</a>
+            <a href="#experience" className="text-white hover:text-white/90">Expériences</a>
+            <a href="#contact" className="text-white hover:text-white/90">Contact</a>
+          </div>
+          {/* Mobile hamburger */}
+          <button className="md:hidden text-white p-2" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {menuOpen
+                ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />}
+            </svg>
+          </button>
           </nav>
+          {/* Mobile menu dropdown */}
+          {menuOpen && (
+            <div className="md:hidden mt-3 flex flex-col gap-3 text-sm pb-2">
+              <a href="#about" onClick={() => setMenuOpen(false)} className="text-white hover:text-white/90">À propos</a>
+              <a href="#projects" onClick={() => setMenuOpen(false)} className="text-white hover:text-white/90">Projets</a>
+              <a href="#skills" onClick={() => setMenuOpen(false)} className="text-white hover:text-white/90">Compétences</a>
+              <a href="#experience" onClick={() => setMenuOpen(false)} className="text-white hover:text-white/90">Expériences</a>
+              <a href="#contact" onClick={() => setMenuOpen(false)} className="text-white hover:text-white/90">Contact</a>
+            </div>
+          )}
         </header>
 
         {/* Main Content */}
@@ -228,7 +248,7 @@ export default function Portfolio() {
               pour protéger les infrastructures critiques.
             </p>
 
-            <div className="mt-6 grid md:grid-cols-3 flex flex-wra gap-4">
+            <div className="mt-6 grid md:grid-cols-3 flex-wrap gap-4">
               <div className="p-4 rounded-lg bg-[#071025]/60 ring-1 ring-white/4">
                 <h4 className="font-semibold">Formation</h4>
                 <p className="text-sm text-white/60 mt-2">
@@ -403,7 +423,7 @@ export default function Portfolio() {
 
 
 
-<div className="mt-6 grid grid-cols-4 gap-3">
+<div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
   {["Suricata", "Wireshark", "Nmap", "Metasploit", "BurpSuite", "Linux", "Python", "Bash"].map((tag) => (
     <span
       key={tag}
