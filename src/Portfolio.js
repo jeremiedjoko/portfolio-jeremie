@@ -106,8 +106,8 @@ export default function Portfolio() {
               </h2>
               <p className="text-lg text-white/75">
                 Je suis diplômé d'une licence en Sécurité Informatique (IFRI-UAC,
-                2026). Passionné par la Cyber-sécurité & l'IA, l'administration
-                réseau et le développement d'outils d'analyse. Je conçois des
+                2026). Passionné par la Cyber-Sécurité & l'IA, l'administration
+                réseau et le développement d'outils d'analyse. Je conçois et implémente des
                 solutions pratiques et robustes pour sécuriser les systèmes et
                 réseaux et pour faciliter la vie au quotidien.
               </p>
@@ -441,7 +441,7 @@ export default function Portfolio() {
 
           {/* Footer */}
           <footer className="mt-16 text-center text-sm text-white/50 pb-12">
-            © {new Date().getFullYear()} Jérémie Landry Djoko — Analyste Cyber-sécurité
+            © {new Date().getFullYear()} Jérémie Landry Djoko — Analyste Cyber-Sécurité
           </footer>
         </main>
 </div>
