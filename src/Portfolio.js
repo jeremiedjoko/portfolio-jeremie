@@ -148,8 +148,8 @@ export default function Portfolio() {
                 Sécurité Informatique & Développement Web
               </h2>
               <p className="text-lg text-white/75">
-                Je suis diplômé d'une licence de Sécurité Informatique (IFRI-UAC,
-                2025). Passionné par la Cyber-sécurité & l'IA, l'administration
+                Je suis diplômé d'une licence en Sécurité Informatique (IFRI-UAC,
+                2026). Passionné par la Cyber-sécurité & l'IA, l'administration
                 réseau et le développement d'outils d'analyse. Je conçois des
                 solutions pratiques et robustes pour sécuriser les systèmes et
                 réseaux et pour faciliter la vie au quotidien.
