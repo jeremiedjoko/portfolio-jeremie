@@ -148,7 +148,7 @@ export default function Portfolio() {
                 Sécurité Informatique & Développement Web
               </h2>
               <p className="text-lg text-white/75">
-                Je suis diplômé en licence de Sécurité Informatique (IFRI-UAC,
+                Je suis diplômé d'une licence de Sécurité Informatique (IFRI-UAC,
                 2025). Passionné par la Cyber-sécurité & l'IA, l'administration
                 réseau et le développement d'outils d'analyse. Je conçois des
                 solutions pratiques et robustes pour sécuriser les systèmes et
@@ -484,7 +484,7 @@ export default function Portfolio() {
 
           {/* Footer */}
           <footer className="mt-16 text-center text-sm text-white/50 pb-12">
-            © {new Date().getFullYear()} Jérémie Landry Djoko — Diplômé en Licence de Sécurité Informatique
+            © {new Date().getFullYear()} Jérémie Landry Djoko — Licence en Sécurité Informatique
           </footer>
         </main>
 </div>
