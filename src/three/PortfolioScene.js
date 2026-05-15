@@ -6,7 +6,7 @@ export default function PortfolioScene() {
   return (
     <>
       {/* Canvas 3D en arrière-plan */}
-      <div className="hidden md:block fixed inset-0 z-0 pointer-events-none">
+      <div className="fixed inset-0 z-0 pointer-events-none">
         <Canvas camera={{ position: [2.5, 2.5, 4], fov: 60 }} style={{ pointerEvents: "none" }}>
           <ambientLight intensity={0.6} />
           <directionalLight position={[5, 5, 5]} intensity={1.3} />
@@ -45,4 +45,4 @@ export default function PortfolioScene() {
       </div>
     </>
   );
-              }
+}
