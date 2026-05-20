@@ -327,7 +327,7 @@ function Scene() {
 ───────────────────────────────────────── */
 export default function PortfolioScene() {
   return (
-    <div className="fixed inset-0 -z-10 pointer-events-none">
+    <div className="fixed inset-0 z-0 pointer-events-none">
       <Canvas camera={{ position: [0, 0, 4], fov: 55 }}>
         <Scene />
       </Canvas>
