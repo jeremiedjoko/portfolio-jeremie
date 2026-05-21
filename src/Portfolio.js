@@ -129,6 +129,7 @@ export default function Portfolio() {
 
         {/* ── À PROPOS ── */}
         <section id="about" className="py-12 border-t border-white/5">
+          <div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
           <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED] mb-4">
             À propos
           </h3>
@@ -153,7 +154,7 @@ export default function Portfolio() {
         </section>
 
         {/* ── PROJETS ── */}
-        <section id="projects" className="py-12 border-t border-white/5">
+        <section id="projects" className="py-12 border-t border-white/5"><div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
           <div className="flex items-baseline justify-between mb-6">
             <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED]">
               Projets
@@ -221,7 +222,7 @@ export default function Portfolio() {
         </section>
 
         {/* ── COMPÉTENCES ── */}
-        <section id="skills" className="py-12 border-t border-white/5">
+        <section id="skills" className="py-12 border-t border-white/5"><div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
           <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED] mb-6">
             Compétences
           </h3>
@@ -255,7 +256,7 @@ export default function Portfolio() {
         </section>
 
         {/* ── EXPÉRIENCES ── */}
-        <section id="experience" className="py-12 border-t border-white/5">
+        <section id="experience" className="py-12 border-t border-white/5"><div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
           <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED] mb-6">
             Expériences
           </h3>
@@ -284,7 +285,7 @@ export default function Portfolio() {
         </section>
 
         {/* ── CONTACT ── */}
-        <section id="contact" className="py-12 border-t border-white/5">
+        <section id="contact" className="py-12 border-t border-white/5"><div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
           <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED] mb-4">
             Contact
           </h3>
