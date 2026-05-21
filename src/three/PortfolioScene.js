@@ -173,13 +173,13 @@ function NeonShield({ section, pointer }) {
       <mesh>
         <extrudeGeometry args={[shape, { depth: 0.4, bevelEnabled: true, bevelSize: 0.08, bevelThickness: 0.08 }]} />
         <meshStandardMaterial color="#7C3AED" emissive="#7C3AED" emissiveIntensity={0.6}
-          metalness={0.95} roughness={0.05} transparent />
+          metalness={0.95} roughness={0.05} transparent opacity={0.5} />
       </mesh>
       {/* Contour néon */}
       <mesh scale={[1.04, 1.04, 1.04]}>
         <extrudeGeometry args={[shape, { depth: 0.42, bevelEnabled: true, bevelSize: 0.08, bevelThickness: 0.08 }]} />
         <meshStandardMaterial color="#6EE7F7" emissive="#6EE7F7" emissiveIntensity={1}
-          wireframe transparent opacity={0.3} />
+          wireframe transparent opacity={0.2} />
       </mesh>
     </group>
   );
