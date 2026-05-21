@@ -8,29 +8,26 @@ import * as THREE from "three";
 ───────────────────────────────────────── */
 function useScrollSection() {
   const [section, setSection] = useState(0);
-  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const ids = ["hero", "about", "projects", "skills", "experience", "contact"];
-    const handler = () => {
-      const scrollY = window.scrollY;
-      const docH = document.documentElement.scrollHeight - window.innerHeight;
-      setProgress(Math.min(scrollY / Math.max(docH, 1), 1));
+    const observers = [];
 
-      let current = 0;
-      ids.forEach((id, i) => {
-        const el = document.getElementById(id);
-        if (el && el.getBoundingClientRect().top <= window.innerHeight * 0.5) {
-          current = i;
-        }
-      });
-      setSection(current);
-    };
-    window.addEventListener("scroll", handler, { passive: true });
-    return () => window.removeEventListener("scroll", handler);
+    ids.forEach((id, i) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const obs = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setSection(i); },
+        { threshold: 0.3 }
+      );
+      obs.observe(el);
+      observers.push(obs);
+    });
+
+    return () => observers.forEach(o => o.disconnect());
   }, []);
 
-  return { section, progress };
+  return { section };
 }
 
 /* ─────────────────────────────────────────
