@@ -73,6 +73,8 @@ export default function Portfolio() {
 
       {/* ── MAIN ── */}
       <main className="relative z-10 max-w-5xl mx-auto px-5 pb-24">
+        <div class="bg-slate-900/40 backdrop-blur-md border border-white/10 rounded-xl p-6">
+  </div>
 
         {/* ── HERO ── */}
         <section id="hero" className="pt-12 pb-16 space-y-6">
