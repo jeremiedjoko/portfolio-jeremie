@@ -462,8 +462,12 @@ function Scene() {
 ───────────────────────────────────────── */
 export default function PortfolioScene() {
   return (
-    <div className="fixed inset-0 -z-10 pointer-events-none">
-      <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
+    <div style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", zIndex: 0, pointerEvents: "none" }}>
+      <Canvas
+        camera={{ position: [0, 0, 5], fov: 50 }}
+        gl={{ antialias: true, alpha: true }}
+        style={{ background: "transparent" }}
+      >
         <Scene />
       </Canvas>
     </div>
