@@ -64,7 +64,7 @@ function useObjectState(index, currentSection) {
 
   useFrame((_, delta) => {
     const visible = currentSection === index;
-    opacity.current = THREE.MathUtils.lerp(opacity.current, visible ? 1 : 0, delta * 3);
+    opacity.current = THREE.MathUtils.lerp(opacity.current, visible ? 0.6 : 0, delta * 3);
     scale.current   = THREE.MathUtils.lerp(scale.current,   visible ? 1 : 0.3, delta * 3);
     posY.current    = THREE.MathUtils.lerp(posY.current,    visible ? 0 : (currentSection > index ? 2 : -2), delta * 3);
   });
