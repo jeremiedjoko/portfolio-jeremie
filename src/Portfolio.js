@@ -28,13 +28,13 @@ export default function Portfolio() {
   const tags = ["Suricata", "Wireshark", "Nmap", "Metasploit", "BurpSuite", "Linux", "Python", "Bash"];
 
   return (
-    <div className="min-h-screen bg-[#030712] text-gray-100 font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-[#030712] text-gray-100 font-sans overflow-x-hidden" style={{ position: "relative" }}>
 
       {/* ── 3D BACKGROUND ── */}
       <PortfolioScene />
 
       {/* ── NAVBAR ── */}
-      <header className="relative z-50 px-5 py-4 flex items-center justify-between backdrop-blur-sm border-b border-white/5">
+      <header className="relative z-50 px-5 py-4 flex items-center justify-between backdrop-blur-sm border-b border-white/5" style={{ position: "relative", zIndex: 50 }}>
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#6EE7F7] to-[#7C3AED] flex items-center justify-center shadow-lg shadow-purple-900/40">
             <span className="font-black text-sm text-white">JD</span>
@@ -91,7 +91,7 @@ export default function Portfolio() {
           </h2>
 
           <p className="text-white/60 text-base leading-relaxed max-w-xl">
-            Diplômé de l'IFRI de l'Université d'Abomey-Calavi, passionné par la Cyber-Sécurité & l'IA. Je conçois et déploie des solutions pour
+            Diplômé de l'IFRI à l'Université d'Abomey-Calavi, passionné par la Cyber-Sécurité & l'IA. Je conçois et déploie des solutions pour
             sécuriser les systèmes et réseaux et les sites web.
           </p>
 
