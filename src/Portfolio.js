@@ -28,13 +28,13 @@ export default function Portfolio() {
   const tags = ["Suricata", "Wireshark", "Nmap", "Metasploit", "BurpSuite", "Linux", "Python", "Bash"];
 
   return (
-    <div className="min-h-screen bg-[#030712] text-gray-100 font-sans overflow-x-hidden" style={{ position: "relative" }}>
+    <div className="min-h-screen bg-[#030712] text-gray-100 font-sans overflow-x-hidden">
 
       {/* ── 3D BACKGROUND ── */}
       <PortfolioScene />
 
       {/* ── NAVBAR ── */}
-      <header className="relative z-50 px-5 py-4 flex items-center justify-between backdrop-blur-sm border-b border-white/5" style={{ position: "relative", zIndex: 50 }}>
+      <header className="relative z-50 px-5 py-4 flex items-center justify-between backdrop-blur-sm border-b border-white/5">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#6EE7F7] to-[#7C3AED] flex items-center justify-center shadow-lg shadow-purple-900/40">
             <span className="font-black text-sm text-white">JD</span>
@@ -73,8 +73,9 @@ export default function Portfolio() {
 
       {/* ── MAIN ── */}
       <main className="relative z-10 max-w-5xl mx-auto px-5 pb-24">
-        <div class="bg-slate-900/40 backdrop-blur-md border border-white/10 rounded-xl p-6">
-  </div>
+        <div className="absolute inset-0 bg-[#030712]/45 -z-10 pointer-events-none" />
+        {/* Fond global pour lisibilité */}
+        <div className="absolute inset-0 bg-[#030712]/60 backdrop-blur-[2px] -z-10 rounded-none pointer-events-none" />
 
         {/* ── HERO ── */}
         <section id="hero" className="pt-12 pb-16 space-y-6">
@@ -91,7 +92,7 @@ export default function Portfolio() {
           </h2>
 
           <p className="text-white/60 text-base leading-relaxed max-w-xl">
-            Diplômé de l'IFRI à l'Université d'Abomey-Calavi, passionné par la Cyber-Sécurité & l'IA. Je conçois et déploie des solutions pour
+            Diplômé de l'IFRI de l'Université d'Abomey-Calavi, passionné par la Cyber-Sécurité & l'IA. Je conçois et déploie des solutions pour
             sécuriser les systèmes et réseaux et les sites web.
           </p>
 
@@ -130,17 +131,18 @@ export default function Portfolio() {
         </section>
 
         {/* ── À PROPOS ── */}
-        <section id="about" className="py-12 border-t border-white/5">
-          <div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
+        <section id="about" className="py-12 border-t border-white/5 bg-[#030712]/70 backdrop-blur-sm rounded-2xl px-4 my-2">
           <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED] mb-4">
             À propos
           </h3>
-          <p className="text-white/60 text-sm leading-relaxed mb-6">
+          <div className="bg-[#030712]/75 backdrop-blur-sm rounded-2xl p-4 mb-6">
+          <p className="text-white/60 text-sm leading-relaxed">
             Titulaire d'une licence professionnelle en sécurité informatique (IFRI-UAC, 2025),
             avec une expérience pratique acquise lors de stages et de Labs. Je maîtrise
             l'administration réseau, l'analyse de trafic, la configuration d'IDS/IPS,
             le développement d'outils en Python et Bash, l'OSINT et le développement web.
           </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
               { title: "Formation", body: "Licence en Sécurité Informatique — IFRI-UAC (2025)" },
@@ -156,7 +158,7 @@ export default function Portfolio() {
         </section>
 
         {/* ── PROJETS ── */}
-        <section id="projects" className="py-12 border-t border-white/5"><div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
+        <section id="projects" className="py-12 border-t border-white/5 bg-[#030712]/70 backdrop-blur-sm rounded-2xl px-4 my-2">
           <div className="flex items-baseline justify-between mb-6">
             <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED]">
               Projets
@@ -224,7 +226,7 @@ export default function Portfolio() {
         </section>
 
         {/* ── COMPÉTENCES ── */}
-        <section id="skills" className="py-12 border-t border-white/5"><div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
+        <section id="skills" className="py-12 border-t border-white/5 bg-[#030712]/70 backdrop-blur-sm rounded-2xl px-4 my-2">
           <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED] mb-6">
             Compétences
           </h3>
@@ -258,7 +260,7 @@ export default function Portfolio() {
         </section>
 
         {/* ── EXPÉRIENCES ── */}
-        <section id="experience" className="py-12 border-t border-white/5"><div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
+        <section id="experience" className="py-12 border-t border-white/5 bg-[#030712]/70 backdrop-blur-sm rounded-2xl px-4 my-2">
           <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED] mb-6">
             Expériences
           </h3>
@@ -287,7 +289,7 @@ export default function Portfolio() {
         </section>
 
         {/* ── CONTACT ── */}
-        <section id="contact" className="py-12 border-t border-white/5"><div className="relative rounded-2xl p-4 bg-[#030712]/75 backdrop-blur-sm">
+        <section id="contact" className="py-12 border-t border-white/5 bg-[#030712]/70 backdrop-blur-sm rounded-2xl px-4 my-2">
           <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6EE7F7] to-[#7C3AED] mb-4">
             Contact
           </h3>
