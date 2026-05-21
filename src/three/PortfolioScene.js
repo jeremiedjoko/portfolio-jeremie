@@ -56,12 +56,11 @@ function usePointer() {
 
 /* ─────────────────────────────────────────
    TRANSITION MANAGER
-   Gère opacity + scale + position entre sections
 ───────────────────────────────────────── */
 function useObjectState(index, currentSection) {
-  const opacity  = useRef(0);
-  const scale    = useRef(0.3);
-  const posY     = useRef(-2);
+  const opacity = useRef(index === 0 ? 1 : 0);
+  const scale   = useRef(index === 0 ? 1 : 0.3);
+  const posY    = useRef(index === 0 ? 0 : -2);
 
   useFrame((_, delta) => {
     const visible = currentSection === index;
@@ -111,7 +110,10 @@ function GlobeNetwork({ section, pointer }) {
     groupRef.current.position.y = posY.current;
     groupRef.current.scale.setScalar(scale.current);
     groupRef.current.traverse(c => {
-      if (c.material) c.material.opacity = opacity.current;
+      if (c.material) {
+        c.material.transparent = true;
+        c.material.opacity = opacity.current;
+      }
     });
   });
 
@@ -307,7 +309,7 @@ function Padlock({ section, pointer }) {
     groupRef.current.position.y = posY.current;
     groupRef.current.scale.setScalar(scale.current);
     groupRef.current.traverse(c => {
-      if (c.material) c.material.opacity = opacity.current;
+      if (c.material) { c.material.transparent = true; c.material.opacity = opacity.current; }
     });
     // Anse qui oscille
     if (ansaRef.current) {
@@ -363,7 +365,7 @@ function Crystal({ section, pointer }) {
     groupRef.current.position.y = posY.current;
     groupRef.current.scale.setScalar(scale.current);
     groupRef.current.traverse(c => {
-      if (c.material) c.material.opacity = opacity.current * 0.9;
+      if (c.material) { c.material.transparent = true; c.material.opacity = opacity.current * 0.9; }
     });
     if (innerRef.current) {
       innerRef.current.rotation.y -= delta * 1.2;
