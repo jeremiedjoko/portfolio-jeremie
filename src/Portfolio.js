@@ -73,8 +73,6 @@ export default function Portfolio() {
 
       {/* ── MAIN ── */}
       <main className="relative z-10 max-w-5xl mx-auto px-5 pb-24">
-        {/* Fond global pour lisibilité */}
-        <div className="absolute inset-0 bg-[#030712]/60 backdrop-blur-[2px] -z-10 rounded-none pointer-events-none" />
 
         {/* ── HERO ── */}
         <section id="hero" className="pt-12 pb-16 space-y-6">
@@ -91,7 +89,7 @@ export default function Portfolio() {
           </h2>
 
           <p className="text-white/60 text-base leading-relaxed max-w-xl">
-            Diplômé de l'IFRI à l'Université d'Abomey-Calavi, passionné par la Cyber-Sécurité & l'IA. Je conçois et déploie des solutions pour
+            Diplômé de l'IFRI de l'Université d'Abomey-Calavi, passionné par la Cyber-Sécurité & l'IA. Je conçois et déploie des solutions pour
             sécuriser les systèmes et réseaux et les sites web.
           </p>
 
