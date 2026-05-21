@@ -73,9 +73,9 @@ export default function Portfolio() {
 
       {/* ── MAIN ── */}
       <main className="relative z-10 max-w-5xl mx-auto px-5 pb-24">
-        <div className="absolute inset-0 bg-[#030712]/45 -z-10 pointer-events-none" />
+        <div className="absolute inset-0 bg-[#030712]/55 -z-10 pointer-events-none" />
         {/* Fond global pour lisibilité */}
-        <div className="absolute inset-0 bg-[#030712]/60 backdrop-blur-[2px] -z-10 rounded-none pointer-events-none" />
+        <div className="absolute inset-0 bg-[#030712]/65 backdrop-blur-[6px] -z-10 rounded-none pointer-events-none" />
 
         {/* ── HERO ── */}
         <section id="hero" className="pt-12 pb-16 space-y-6">
