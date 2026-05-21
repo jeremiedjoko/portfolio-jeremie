@@ -91,7 +91,7 @@ export default function Portfolio() {
           </h2>
 
           <p className="text-white/60 text-base leading-relaxed max-w-xl">
-            Diplômé de l'IFRI de l'Université d'Abomey-calavi, passionné par la Cyber-Sécurité & l'IA. Je conçois et déploie des solutions pour
+            Diplômé de l'IFRI de l'Université d'Abomey-Calavi, passionné par la Cyber-Sécurité & l'IA. Je conçois et déploie des solutions pour
             sécuriser les systèmes et réseaux et les sites web.
           </p>
 
