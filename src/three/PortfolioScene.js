@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Stars, Float, MeshDistortMaterial, Wireframe } from "@react-three/drei";
+import { Stars, Float } from "@react-three/drei";
 import * as THREE from "three";
 
 /* ─────────────────────────────────────────
@@ -38,7 +38,6 @@ function useScrollSection() {
 ───────────────────────────────────────── */
 function GlobeNetwork({ visible }) {
   const groupRef = useRef();
-  const linesRef = useRef([]);
   const opacity = useRef(0);
 
   const points = useMemo(() => {
@@ -333,4 +332,4 @@ export default function PortfolioScene() {
       </Canvas>
     </div>
   );
-}
+         }
