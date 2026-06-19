@@ -495,7 +495,44 @@ button {
   .pf-logo-text {
     display: none;
   }
+  /* Title fits on 2 lines on small screens */
+  .pf-hero-title {
+    font-size: clamp(1.65rem, 7.5vw, 2rem);
+    letter-spacing: -1px;
+    line-height: 1.12;
+  }
+  /* Buttons: first two side-by-side, third full width */
+  .pf-hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .pf-hero-actions a:last-child {
+    grid-column: 1 / -1;
+  }
+  .pf-hero-actions a:last-child .pf-btn {
+    width: 100%;
+  }
+  /* Kill heavy effects on mobile */
+  .pf-hero-content {
+    filter: none !important;
+    transform: none !important;
+  }
+  .pf-hero-desc {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+  /* Simpler orb on mobile — no blur animation */
+  .pf-hero-orb {
+    animation: none;
+    filter: blur(50px);
+    opacity: 0.6;
+  }
+  .pf-hero-mobile-visual {
+    height: 80px;
+  }
 }
+
 
 @media (min-width: 769px) {
   .pf-hero {

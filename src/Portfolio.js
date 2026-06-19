@@ -13,11 +13,12 @@ import { colors } from "./styles/theme";
 
 function LangToggle() {
   const { lang, toggleLang } = useLang();
+  const isFR = lang === "fr";
   return (
     <motion.button
       type="button"
       onClick={toggleLang}
-      aria-label={lang === "en" ? "Switch to French" : "Switch to English"}
+      aria-label={isFR ? "Switch to English" : "Passer en français"}
       whileTap={{ scale: 0.97 }}
       style={{
         display: "flex",
@@ -27,14 +28,16 @@ function LangToggle() {
         borderRadius: 100,
         background: "rgba(255,255,255,0.05)",
         border: "1px solid rgba(255,255,255,0.1)",
-        color: "rgba(255,255,255,0.65)",
+        color: "rgba(255,255,255,0.85)",
         fontSize: 12,
-        fontWeight: 600,
+        fontWeight: 700,
         letterSpacing: 0.8,
         cursor: "pointer",
       }}
     >
-      {lang === "en" ? "FR" : "EN"}
+      <span style={{ opacity: isFR ? 1 : 0.45, transition: "opacity 0.2s" }}>FR</span>
+      <span style={{ opacity: 0.3, fontSize: 10 }}>|</span>
+      <span style={{ opacity: isFR ? 0.45 : 1, transition: "opacity 0.2s" }}>EN</span>
     </motion.button>
   );
 }

@@ -32,13 +32,14 @@ export default function HeroSection() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
+    if (isMobile) return;
     const fn = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", fn, { passive: true });
     return () => window.removeEventListener("scroll", fn);
-  }, []);
+  }, [isMobile]);
 
-  const fadeOut = Math.max(0, 1 - scrollY / 500);
-  const parallax = reduced ? 0 : scrollY * 0.22;
+  const fadeOut = isMobile ? 1 : Math.max(0, 1 - scrollY / 500);
+  const parallax = (isMobile || reduced) ? 0 : scrollY * 0.22;
 
   return (
     <section
@@ -72,7 +73,7 @@ export default function HeroSection() {
       )}
 
       {!isMobile && <Spotlight size={240} />}
-      <FloatingTechChips containerRef={heroRef} />
+      {!isMobile && <FloatingTechChips containerRef={heroRef} />}
 
       {/* 3D robot: desktop only */}
       {!isMobile && (
@@ -196,13 +197,8 @@ export default function HeroSection() {
       </motion.div>
 
       {isMobile && (
-        <div className="pf-hero-mobile-visual" style={{ opacity: fadeOut }}>
+        <div className="pf-hero-mobile-visual">
           <div className="pf-hero-orb" />
-          <Suspense fallback={<div className="pf-spinner-wrap"><div className="pf-spinner" /></div>}>
-            <div style={{ position: "relative", height: 200, marginTop: -40 }}>
-              <SplineScene scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode" />
-            </div>
-          </Suspense>
         </div>
       )}
 

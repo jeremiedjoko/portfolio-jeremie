@@ -120,7 +120,7 @@ export const t = {
 
   fr: {
     nav: { about: "À propos", projects: "Projets", skills: "Compétences", experience: "Expériences", contact: "Contact" },
-    navbar: { subtitle: "Analyste cyber · Blue Team & Red Team" },
+    navbar: { subtitle: "Analyste cybersécurité · Blue Team & Red Team" },
 
     hero: {
       badge: "Disponible pour stage et opportunités",
