@@ -148,7 +148,6 @@ export default function HeroSection() {
               <span className="pf-hero-title-line pf-hero-title-line--primary">{tr.titleLine1}</span>
               <span className="pf-hero-title-line pf-hero-title-line--accent">{tr.titleLine2}</span>
             </h1>
-            <p style={{ fontSize: 14, color: "rgba(255,255,255,0.45)", marginTop: 14, letterSpacing: 0.3 }}>{tr.name}</p>
             <p style={{ fontSize: 12, color: "rgba(110,231,247,0.85)", marginTop: 8, letterSpacing: 1, textTransform: "uppercase", fontWeight: 600 }}>{tr.role}</p>
           </motion.div>
 
