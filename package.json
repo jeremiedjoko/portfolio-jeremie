@@ -2,7 +2,6 @@
   "name": "portfolio-jeremie",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@neondatabase/serverless": "^0.10.4",
