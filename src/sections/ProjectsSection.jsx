@@ -5,6 +5,8 @@ import { PROJECTS } from "../data/portfolioData";
 import { useLang } from "../context/LangContext";
 import { t } from "../data/translations";
 import { colors, fonts, layout } from "../styles/theme";
+import { useProjectViews } from "../hooks/useProjectViews";
+import { Eye } from "lucide-react";
 
 function useInView(threshold = 0.05) {
   const ref = useRef();
@@ -18,6 +20,8 @@ function useInView(threshold = 0.05) {
 }
 
 function ProjectCard({ project, index, tr, inView }) {
+  const views = useProjectViews(project.id);
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 36 }}
@@ -64,6 +68,23 @@ function ProjectCard({ project, index, tr, inView }) {
         <p style={{ position: "absolute", bottom: 12, left: 16, fontSize: 9, letterSpacing: 2.5, color: `${project.accent}CC`, textTransform: "uppercase" }}>
           {project.category}
         </p>
+        {views !== null && (
+          <span
+            style={{
+              position: "absolute",
+              bottom: 12,
+              right: 16,
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 4,
+              fontSize: 10,
+              color: "rgba(255,255,255,0.5)",
+            }}
+          >
+            <Eye size={11} aria-hidden />
+            {views}
+          </span>
+        )}
       </div>
 
       <div style={{ padding: "20px 22px", flex: 1, display: "flex", flexDirection: "column" }}>
@@ -117,7 +138,7 @@ export default function ProjectsSection() {
   const tr = t[lang].projects;
   const [showAll, setShowAll] = useState(false);
   const [ref, inView] = useInView(0.05);
-  
+
   const currentProjects = PROJECTS[lang] || PROJECTS.en;
   const visible = showAll ? currentProjects : currentProjects.slice(0, 6);
 
