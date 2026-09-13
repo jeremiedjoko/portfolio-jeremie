@@ -1,6 +1,6 @@
 export const t = {
   en: {
-    nav: { about: "About", projects: "Projects", skills: "Skills", experience: "Experience", contact: "Contact" },
+    nav: { about: "About", projects: "Projects", skills: "Skills", certifications: "Certifications", experience: "Experience", contact: "Contact" },
     navbar: { subtitle: "Cybersecurity Analyst · Blue Team & Red Team" },
 
     hero: {
@@ -51,6 +51,15 @@ export const t = {
         { icon: "smartphone", title: "Frontend & Mobile", num: "07", desc: "Interfaces that earn trust at first glance.", tags: ["React.js", "Three.js", "JavaScript ES6+", "HTML5 / CSS3", "Flutter", "Framer Motion", "GSAP"] },
         { icon: "palette", title: "Design & Tools", num: "07", desc: "Design systems and workflow tools.", tags: ["Figma", "UI/UX Design", "Design System", "Responsive Design", "Git / GitHub", "VS Code", "Spline 3D"] },
       ],
+    },
+
+    certifications: {
+      label: "Verified learning",
+      title1: "Certifications &",
+      title2: "training",
+      desc: "Completed courses and certificates, with the original files available to download and verify.",
+      download: "Download",
+      noFile: "No downloadable file",
     },
 
     projects: {
@@ -119,7 +128,7 @@ export const t = {
   },
 
   fr: {
-    nav: { about: "À propos", projects: "Projets", skills: "Compétences", experience: "Expériences", contact: "Contact" },
+    nav: { about: "À propos", projects: "Projets", skills: "Compétences", certifications: "Certifications", experience: "Expériences", contact: "Contact" },
     navbar: { subtitle: "Analyste cybersécurité · Blue Team & Red Team" },
 
     hero: {
@@ -170,6 +179,15 @@ export const t = {
         { icon: "smartphone", title: "Frontend & Mobile", num: "07", desc: "Des interfaces qui inspirent confiance.", tags: ["React.js", "Three.js", "JavaScript ES6+", "HTML5 / CSS3", "Flutter", "Framer Motion", "GSAP"] },
         { icon: "palette", title: "Design & Outils", num: "07", desc: "Design systems et outils de production.", tags: ["Figma", "UI/UX Design", "Design System", "Responsive Design", "Git / GitHub", "VS Code", "Spline 3D"] },
       ],
+    },
+
+    certifications: {
+      label: "Formations vérifiées",
+      title1: "Certifications &",
+      title2: "formations",
+      desc: "Cours et certifications complétés, avec les justificatifs originaux téléchargeables et vérifiables.",
+      download: "Télécharger",
+      noFile: "Pas de fichier téléchargeable",
     },
 
     projects: {

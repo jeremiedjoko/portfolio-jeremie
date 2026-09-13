@@ -42,6 +42,7 @@ export default function FooterSection() {
     { href: "#about", label: tr.nav.about },
     { href: "#projects", label: tr.nav.projects },
     { href: "#skills", label: tr.nav.skills },
+    { href: "#certifications", label: tr.nav.certifications },
     { href: "#experience", label: tr.nav.experience },
     { href: "#contact", label: tr.nav.contact },
   ];

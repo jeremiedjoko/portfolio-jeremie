@@ -6,6 +6,7 @@ import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import SkillsSection from "./sections/SkillsSection";
+import CertificationsSection from "./sections/CertificationsSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import ContactSection from "./sections/ContactSection";
 import FooterSection from "./sections/FooterSection";
@@ -51,6 +52,7 @@ function Navbar() {
     { href: "#about", label: tr.nav.about },
     { href: "#projects", label: tr.nav.projects },
     { href: "#skills", label: tr.nav.skills },
+    { href: "#certifications", label: tr.nav.certifications },
     { href: "#experience", label: tr.nav.experience },
     { href: "#contact", label: tr.nav.contact },
   ];
@@ -178,6 +180,7 @@ export default function Portfolio() {
         <AboutSection />
         <ProjectsSection />
         <SkillsSection />
+        <CertificationsSection />
         <ExperienceSection />
         <ContactSection />
       </main>
