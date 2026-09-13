@@ -84,7 +84,7 @@ export const t = {
       workLabel: "Work experience",
       degree: {
         type: "Degree",
-        period: "2022 – 2025",
+        period: "2026",
         role: "B.Sc. Computer Security",
         org: "IFRI, University of Abomey-Calavi",
         bullets: [
